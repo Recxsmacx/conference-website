@@ -95,7 +95,7 @@ export default function Home() {
                   </div>
                 ) : (
                   <div className="flex justify-center">
-                    <div className="w-[900px] lg:w-full flex justify-between">
+                    <div className="space-x-4 lg:w-full flex justify-between">
                       {speakers.map((speaker) => {
                         return (
                           <div
@@ -233,7 +233,7 @@ export default function Home() {
         </div>
       </div>
       <div id="sponsors" className="mt-20">
-        <Sponsors
+    <Sponsors
           eventSponsors={[
             {
               image: "/img/logos/apidays.png",
@@ -245,8 +245,7 @@ export default function Home() {
             },
           ]}
           // financialSponsor={[{image:"/img/graviteeio.svg" , websiteUrl: "https://www.gravitee.io/",className:"w-[250px] h-[50px]" } , {image:"/img/postman.png" ,websiteUrl:"https://www.postman.com/",className:"w-[240px] h-[70px]"}]}
-        />
-      </div>
+        />      </div>
       <div className="mt-5">
         <Subscription />
       </div>
